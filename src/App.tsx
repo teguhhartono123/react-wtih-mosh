@@ -7,8 +7,12 @@ import ListGroup from "./components/ListGroup";
     'Bali',
     'Jakarta'];
 
+    const handleSelectItem = (item:string) => {
+      console.log(item);
+    }
+
 function App() {
-  return <div><ListGroup items={items} heading="Cities"/></div>; 
+  return <div><ListGroup items={items} heading="Cities" onSelectitem={handleSelectItem}/></div>; 
 }
 
 export default App;
