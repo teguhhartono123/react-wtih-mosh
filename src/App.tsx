@@ -1,18 +1,11 @@
-import ListGroup from "./components/ListGroup";
-
- let items = [
-    'Palembang',
-    'Lampung',
-    'Madiun',
-    'Bali',
-    'Jakarta'];
-
-    const handleSelectItem = (item:string) => {
-      console.log(item);
-    }
+import Button from "./components/Button";
 
 function App() {
-  return <div><ListGroup items={items} heading="Cities" onSelectitem={handleSelectItem}/></div>; 
+  return (
+    <div>
+      <Button color="info"  onClick={() => console.log('Clicked')}>My Button</Button>
+    </div>
+  );
 }
 
 export default App;
