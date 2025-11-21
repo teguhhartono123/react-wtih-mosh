@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
     cartItems: string[]
-    onclear: () => void
+    onClear: () => void
 }
 
 const Cart = ({cartItems, onClear }:Props) => {
