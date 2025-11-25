@@ -27,7 +27,7 @@ const Form = () => {
     </div>
     <div className="mb-3">
         <label htmlFor="age" className="form-label">Age</label>
-        <input onChange={(event) => setPerson({ ...person, age:parseInt(event.target.value) })} 
+        <input onChange={(event) => setPerson({ ...person, age: event.target.value})} 
         value={person.age}
         id="age" 
         type="number" 
