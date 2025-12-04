@@ -12,7 +12,7 @@ function App () {
 
   useEffect (() => {
     axios.get<User[]>('https://jsonplaceholder.typicode.com/users')
-      .then(res => setUsers(res.data));
+      .then(res => setUsers(res.data))
   }, [])
 
 
